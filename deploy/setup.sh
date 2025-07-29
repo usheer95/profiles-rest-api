@@ -15,7 +15,6 @@ echo "Installing dependencies..."
 apt-get update
 apt-get install -y sqlite3 supervisor nginx git
 wget -O - https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
-source usr/local/bin/env
 
 mkdir -p $PROJECT_BASE_PATH
 git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH
