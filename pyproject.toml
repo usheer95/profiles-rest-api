@@ -8,5 +8,5 @@ dependencies = [
     "django==2.2",
     "djangorestframework>=3.9.1",
     "setuptools",
-    "uwsgi>=2.0.30",
+    "uwsgi>=2.0.18",
 ]
