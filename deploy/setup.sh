@@ -13,7 +13,7 @@ locale-gen en_GB.UTF-8
 # Install Python, SQLite and pip
 echo "Installing dependencies..."
 apt-get update
-apt-get install -y sqlite3 supervisor nginx git
+apt-get install -y python3-dev sqlite3 supervisor nginx git
 wget -O - https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
 
 mkdir -p $PROJECT_BASE_PATH
@@ -23,7 +23,6 @@ cd $PROJECT_BASE_PATH
 
 uv self update
 uv python install
-uv add uwsgi
 uv sync
 
 #python3 -m venv $PROJECT_BASE_PATH/env
