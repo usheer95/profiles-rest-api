@@ -14,7 +14,7 @@ locale-gen en_GB.UTF-8
 echo "Installing dependencies..."
 apt-get update
 apt-get install -y sqlite3 supervisor nginx git
-wget -qO- https://astral.sh/uv/install.sh | sh
+wget -O - https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="usr/local/bin" sh
 
 mkdir -p $PROJECT_BASE_PATH
 git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH
