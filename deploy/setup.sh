@@ -13,7 +13,7 @@ locale-gen en_GB.UTF-8
 # Install Python, SQLite and pip
 echo "Installing dependencies..."
 apt-get update
-apt-get install -y sqlite supervisor nginx git
+apt-get install -y sqlite3 supervisor nginx git
 wget -qO- https://astral.sh/uv/install.sh | sh
 
 mkdir -p $PROJECT_BASE_PATH
