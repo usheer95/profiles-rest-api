@@ -30,6 +30,8 @@ uv sync
 
 # Run migrations
 uv run $PROJECT_BASE_PATH/manage.py migrate
+uv run $PROJECT_BASE_PATH/manage.py collectstatic --noinput
+
 #$PROJECT_BASE_PATH/env/bin/python $PROJECT_BASE_PATH/manage.py migrate
 
 # Setup Supervisor to run our uwsgi process.
