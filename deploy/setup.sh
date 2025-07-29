@@ -19,6 +19,8 @@ wget -O - https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" 
 mkdir -p $PROJECT_BASE_PATH
 git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH
 
+cd $PROJECT_BASE_PATH
+
 uv self update
 uv python install
 uv add uwsgi
